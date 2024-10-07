@@ -1,4 +1,4 @@
-// if, else if e else
+// if, else if e else (pt1)
 
 /*
 Entre 0 - 11 - Bom dia
