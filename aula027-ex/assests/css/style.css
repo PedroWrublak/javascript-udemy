@@ -57,7 +57,11 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-div#iresp {
-  margin-top: 20px;
-  padding: 10px;
+.paragrafo-resultado, .bad {
+  background: rgb(89, 218, 77);
+  padding: 10px 20px;
+}
+
+.bad {
+  background: rgb(250, 112, 112);
 }
