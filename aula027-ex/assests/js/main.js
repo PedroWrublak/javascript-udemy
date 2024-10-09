@@ -4,9 +4,9 @@ function enviar() {
 
     form.addEventListener('submit', function(e) { // e -> event
         e.preventDefault();
-    })
+    });
 
-    function imc () {
+    function setResultado () {
         
         const pesoBase = document.querySelector('#ipeso').value;
         const alturaBase = document.querySelector('#ialtura').value;
@@ -19,6 +19,7 @@ function enviar() {
         function calculo() {
 
             const imc = peso / (altura * altura)
+
             resp.innerHTML = `Seu IMC é ${imc.toFixed(2)}`;
 
             if (imc < 18.5) {
@@ -48,7 +49,7 @@ function enviar() {
     
     };
 
-    form.addEventListener('submit', imc);
+    form.addEventListener('submit', setResultado);
 }
 
 enviar();
