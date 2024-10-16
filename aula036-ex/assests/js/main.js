@@ -6,11 +6,11 @@ const elementos = [
 ]
 
 const container = document.querySelector('.container');
-const div = document.createElement('div');
+const div = document.createElement('div'); // API do dom
 
 for (let i = 0; i < elementos.length; i++) {
     let { tag, texto } = elementos[i];
-    let tagCriada = document.createElement(tag);
+    let tagCriada = document.createElement(tag); // API do dom
     let textoCriado = document.createTextNode(texto);
 
     tagCriada.appendChild(textoCriado);
